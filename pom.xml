@@ -8,8 +8,19 @@
   <artifactId>sms</artifactId>
   <version>1.0.0</version>
 
-  <name>sms</name>
+  <name>${project.groupId}:${project.artifactId}</name>
+  <description>
+    This is a simple library for Arkesel API. Using this library you can send single/bulk SMS to contacts, phone verification
+    that is One Time Password (OTP), create groups and add contacts.
+  </description>
   <url>https://sms.arkesel.com/</url>
+
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
