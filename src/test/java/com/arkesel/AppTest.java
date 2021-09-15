@@ -16,7 +16,7 @@ public class AppTest
     /**
      * checkSMSDetails Test :-)
      */
-    @Test
+    /*@Test
     public void checkSMSDetails() throws IOException, InterruptedException {
         HttpResponse<String> response = sms.messagingInstance.getSMSDetails("29c642c5-8826-44c0-98b4-abcf9243911d");
         assertEquals(200, response.statusCode());
@@ -125,5 +125,5 @@ public class AppTest
         HttpResponse<String> response = sms.phoneVerificationInstance
                 .verifyOTPCode("0205768728","701395");
         assertEquals(200, response.statusCode());
-    }
+    }*/
 }
