@@ -307,7 +307,7 @@ For more information visit the docs here, [here](https://developers.arkesel.com/
 //Using SMS instance
 HttpResponse<String> response = sms.phoneVerificationInstance.sendOTPCode(6, OTPType.NUMERIC, 2,"Code: %otp_code%","0544919953", OTPMedium.SMS);
 
-//Using Messaging instance
+//Using Phone Verification instance
 HttpResponse<String> response = phoneVerification.sendOTPCode(6, OTPType.ALPHANUMERIC, 2,"Code: %otp_code%","0544919953. Code will expire in %expiry% minutes", OTPMedium.VOICE);
 ```
 
@@ -325,14 +325,14 @@ HttpResponse<String> response = phoneVerification.verifyOTPCode();
 | number | String | null | true | 
 | code | String | null | true | 
 
-For more information visit the docs here, [here](https://developers.arkesel.com/#operation/otp_generate)
+For more information visit the docs here, [here](https://developers.arkesel.com/#operation/otp_verify)
 
 #### Example
 ```java
 //Using SMS instance
 HttpResponse<String> response = sms.phoneVerificationInstance.verifyOTPCode("0544919953", "16279");
 
-//Using Messaging instance
+//Using Phone Verification instance
 HttpResponse<String> response = phoneVerification.verifyOTPCode("0544919953", "16279");
 ```
 
