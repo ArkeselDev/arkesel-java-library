@@ -1,5 +1,9 @@
 package com.arkesel;
 
+import com.arkesel.model.ContactObject;
+import com.arkesel.model.GroupObject;
+import com.arkesel.model.MessageObject;
+
 import java.io.IOException;
 import java.net.http.HttpResponse;
 import java.util.List;

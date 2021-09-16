@@ -1,4 +1,4 @@
-package com.arkesel;
+package com.arkesel.model;
 
 public class ContactObject {
     private String phoneNumber;

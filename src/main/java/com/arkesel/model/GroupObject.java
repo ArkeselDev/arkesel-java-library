@@ -1,4 +1,6 @@
-package com.arkesel;
+package com.arkesel.model;
+
+import com.arkesel.model.ContactObject;
 
 import java.util.ArrayList;
 import java.util.List;

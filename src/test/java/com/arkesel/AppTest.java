@@ -3,6 +3,10 @@ package com.arkesel;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+import com.arkesel.model.ContactObject;
+import com.arkesel.model.MessageObject;
+import com.arkesel.model.OTPMedium;
+import com.arkesel.model.OTPType;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -16,7 +20,7 @@ public class AppTest
     /**
      * checkSMSDetails Test :-)
      */
-    /*@Test
+    @Test
     public void checkSMSDetails() throws IOException, InterruptedException {
         HttpResponse<String> response = sms.messagingInstance.getSMSDetails("29c642c5-8826-44c0-98b4-abcf9243911d");
         assertEquals(200, response.statusCode());
@@ -116,7 +120,7 @@ public class AppTest
     @Test
     public void sendOTPCode() throws IOException, InterruptedException {
         HttpResponse<String> response = sms.phoneVerificationInstance
-                .sendOTPCode(6,OTPType.NUMERIC,10,"%otp_code%","0205768728",OTPMedium.SMS);
+                .sendOTPCode(6, OTPType.NUMERIC,10,"%otp_code%","0205768728", OTPMedium.SMS);
         assertEquals(200, response.statusCode());
     }
 
@@ -125,5 +129,5 @@ public class AppTest
         HttpResponse<String> response = sms.phoneVerificationInstance
                 .verifyOTPCode("0205768728","701395");
         assertEquals(200, response.statusCode());
-    }*/
+    }
 }

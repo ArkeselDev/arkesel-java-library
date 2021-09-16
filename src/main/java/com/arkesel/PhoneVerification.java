@@ -1,5 +1,9 @@
 package com.arkesel;
 
+import com.arkesel.model.OTPMedium;
+import com.arkesel.model.OTPObject;
+import com.arkesel.model.OTPType;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;

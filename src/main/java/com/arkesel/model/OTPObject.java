@@ -1,4 +1,6 @@
-package com.arkesel;
+package com.arkesel.model;
+
+import com.arkesel.SMS;
 
 public class OTPObject {
 
@@ -93,12 +95,3 @@ public class OTPObject {
     }
 }
 
-enum OTPType {
-    ALPHANUMERIC,
-    NUMERIC
-}
-
-enum OTPMedium {
-    SMS,
-    VOICE
-}
